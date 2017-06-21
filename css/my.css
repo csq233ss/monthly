@@ -1,0 +1,341 @@
+
+html {
+    max-width: 640px;
+    color:#FFF;
+    font-size: 100px;
+    font-family: "Microsoft YaHei";
+    margin: 0 auto;
+    overflow:hidden;
+}
+body {
+    background: url("http://kxe-www-168.oss-cn-hangzhou.aliyuncs.com/kxe/adv/imgPost/201704_bg.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*==============================================================*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.arrar{
+    position: absolute;
+    bottom: 6%;
+    z-index: 888;
+    width: 100%;
+    text-align: center;
+    animation:upDownBtn 1.5s infinite;
+    animation:upDownBtn 1.5s infinite;
+    -webkit-animation:upDownBtn 1.5s infinite;
+    animation:upDownBtn 1.5s infinite;
+}
+@-webkit-keyframes upDownBtn{
+    0%{opacity:0;-webkit-transform:translateY(15px);transform:translateY(15px)}
+    50%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
+    100%{opacity:0;-webkit-transform:translateY(-15px);transform:translateY(-15px)}
+}
+@keyframes upDownBtn{
+    0%{opacity:0;-webkit-transform:translateY(15px);-ms-transform:translateY(15px);transform:translateY(15px)}
+    50%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+    100%{opacity:0;-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px)}
+}
+.outer{
+    overflow: hidden;
+    width: auto;
+    height: 2.14rem;
+}
+/*第一页*/
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background: rgba(0,0,0,.6);
+    z-index: -1;
+}
+.first_bg{
+    width: 100%;
+    height: 2.4rem;
+    background: rgba(255,255,255,.3);
+    margin-top: 3.25rem;
+    z-index: 2;
+}
+.first_bg .title {
+    text-align: center;
+    font-size: .68rem;
+    color: white;
+    z-index: 3;
+    padding: .4rem 0 .2rem 0;
+}
+.first_bg .hr{
+    width: 3.86rem;
+    height: .02rem;
+    background: white;
+    margin: 0 auto;
+}
+.first_bg .name{
+    font-size: .23rem;
+    text-align: center;
+    margin: .2rem 0 .37rem 0;
+}
+.firstBottom{
+    width: 100%;
+    height: .1rem;
+    background: rgba(255,255,255,.3);
+    margin-top: .2rem;
+}
+/*第二页*/
+.second{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+}
+.second_top{
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+.second_top .second_num{
+    width: 1.18rem;
+    height: 1.32rem;
+    margin-left: 3.24rem;
+    font-size: 1rem;
+    color: #FC8412;
+}
+.second_top .second_hr{
+    width: 1.4rem;
+    height: .04rem;
+    background: #FC8412;
+    margin: 0 auto;
+}
+.second_top .pageName{
+    font-size: .36rem;
+    text-align: center;
+    margin-top: .1rem;
+}
+.second_con{
+    margin: 1.14rem .55rem 0 .5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.circle{
+    width: .3rem;
+    height: .3rem;
+    background:url("http://kxe-www-168.oss-cn-hangzhou.aliyuncs.com/kxe/adv/imgPost/Oval%201.png") no-repeat;
+    background-size:100% 100% ;
+    z-index: 20;
+    position: relative
+}
+
+.second_con .text{
+    border-left: 1px solid #fff;
+    margin: -.28rem 0 0 .13rem;
+    z-index: -20;
+    padding-left: .78rem;
+    position: relative;
+    font-size: .3rem;
+}
+.topError{
+    padding-top: .24rem;
+    font-size: .25rem;
+    opacity: .8;
+}
+.no-padding{
+    padding-top: 0;
+}
+.bottomError{
+    padding-bottom: .68rem;
+    font-size: .25rem;
+    opacity: .8;
+}
+    /*第三页*/
+#outer {
+    width:100%;
+}
+#tab {
+    overflow:hidden;
+    zoom:1;
+    margin-top: .69rem;
+}
+#tab li {
+    text-align: center;
+    width:30%;
+    float:left;
+    color:#858585;
+    height:.63rem;
+    cursor:pointer;
+    font-size: .3rem;
+    margin-left: 14%;
+}
+#tab li.current {
+    color:#fff;
+    border-bottom: .06rem solid #FC8412;
+}
+#content {
+    border-top-width:0;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 7.79rem;
+    text-align: center;
+    overflow: hidden;
+}
+#content ul {
+    display:none;
+}
+#content ul img{
+    width: 6.59rem;
+    height: 5.8rem;
+    margin: 1.05rem 0 .94rem 0;
+}
+#content ul .time{
+    font-size: .3rem;
+    padding: .4rem 0 .39rem 0;
+}
+#content ul .time_hr{
+    width: 5.5rem;
+    height: .04rem;
+    background: rgba(255,255,255,.52);
+    margin: 0 auto .6rem auto;
+}
+#content ul .numText{
+    width: 5.5rem;
+    margin: 0 auto;
+    text-align: left;
+}
+#content ul .numText .one{
+    font-size: .3rem;
+    color: rgba(255,255,255,.6);
+}
+#content ul .numText .two{
+    font-size: .48rem;
+    color:#FC8412;
+    padding: .2rem 0 .4rem 0;
+}
+/*第四页*/
+   /*画圆*/
+
+.quan {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top:1.27rem;
+}
+.circleList li{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.quan .ratio{
+    width: 1.6rem;
+    height: .4rem;
+    font-size: .3rem;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-top: -.2rem;
+    margin-left: -.8rem;
+}
+.quan .percent{
+    position: absolute;
+    right: 0;
+    top:-.3rem;
+    font-size: .72rem;
+    color: #FC8412;
+}
+.quan .percent span{
+    font-size: .36rem;
+}
+.explain{
+    font-size: .24rem;
+    width: 5.8rem;
+    height: .76rem;
+    margin: 5.2rem auto 0 auto;
+}
+/*第五页*/
+.fourth_con{
+    width:1.195rem;
+    height: 4.75rem;
+    margin: .19rem 0 0 -.38rem
+}
+.fourth_text{
+    position: absolute;
+    top:.9rem;
+    left: .38rem;
+}
+.fourth_text .readyMoney{
+    font-size: .3rem;
+    color: rgba(255,255,255,.6);
+    margin-top: -.36rem;
+    margin-left: .5rem;
+}
+.fourth_text .moneyNum{
+    font-size: .72rem;
+    color: #FC8412;
+    margin-left: .5rem;
+    margin-bottom: .91rem;
+}
+.fourth_text .moneyNum span{
+    font-size: .36rem;
+}
+.attention{
+    margin: 1.13rem auto 1.72rem auto;
+    font-size: .24rem;
+    display:table;
+}
+.question{
+    width: 100%;
+    position: absolute;
+    bottom: .59rem;
+    text-align:center;
+}
+.end{
+    font-size: .18rem;
+    color: #fff;
+    text-align: center;
+}
+.question a{
+    text-decoration: underline;
+    color: #FC8412;
+    font-size: .36rem;
+}
+
+@media screen and (max-width:320px) and (max-height: 480px){
+     #content{
+         height: 6.09rem;
+         position: relative;
+         margin-top: -0.01rem;
+         z-index: 10000;
+     }
+    #content ul img{
+    	margin-top: .55rem;
+    	width: 6.09rem;
+        height: 4.9rem;
+    }
+}
+@media screen and (min-width:640px){
+    body{
+        background-size: 100% 100%;
+    }
+    .second_top .second_num{
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
